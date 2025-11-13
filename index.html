@@ -2,106 +2,33 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politique de confidentialité – Veridia Studio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right, #f0f4f8, #e2e8f0);
-      color: #2d3748;
-    }
-    header {
-      background-color: #1a202c;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .logo {
-      height: 60px;
-      margin-bottom: 10px;
-    }
-    nav a {
-      color: #cbd5e0;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    nav a:hover {
-      color: #ffffff;
-    }
-    .banner img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 30px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 30px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
-      animation: fadeIn 1s ease-in;
-    }
-    h2 {
-      font-size: 22px;
-      margin-bottom: 20px;
-      color: #2b6cb0;
-    }
-    p {
-      line-height: 1.7;
-      margin-bottom: 15px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #718096;
-      margin-top: 40px;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @media (max-width: 600px) {
-      .container {
-        margin: 20px;
-        padding: 20px;
-      }
-      header h1 {
-        font-size: 22px;
-      }
-    }
-  </style>
+  <title>Veridia Studio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <img src="logo.png" alt="Logo Veridia Studio" class="logo">
     <h1>Veridia Studio</h1>
     <nav>
-      <a href="#">Accueil</a>
-      <a href="#">Politique</a>
-      <a href="#">Contact</a>
+      <a href="index.html">Accueil</a>
+      <a href="politique.html">Politique</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <div class="banner">
-    <img src="banner.png" alt="Bannière Veridia Studio">
-  </div>
+  <section class="hero">
+    <h2>Bienvenue chez Veridia Studio</h2>
+    <p>Créations uniques : t-shirts, hoodies et designs originaux.</p>
+    <a href="https://www.etsy.com/shop/TON_NOM" class="btn">Voir la boutique Etsy</a>
+  </section>
 
-  <div class="container">
-    <h2>Politique de confidentialité</h2>
-    <p>Dernière mise à jour : 13 novembre 2025</p>
+  <section class="politique-preview">
+    <h3>Politique de confidentialité</h3>
+    <p>Nous respectons vos données. Cliquez ci-dessous pour lire notre politique complète.</p>
+    <a href="politique.html" class="btn">Lire la politique</a>
+  </section>
 
-    <p>Chez Veridia Studio, nous accordons une grande importance à la protection de vos données personnelles. Cette politique de confidentialité décrit les types d'informations que nous collectons, comment nous les utilisons, et les mesures que nous prenons pour les protéger.</p>
-
-    <h3>1. Collecte des données</h3>
+  <footer>
+    <p>&copy; 2025 Veridia Studio</p>
+  </footer>
+</body>
+</html>
