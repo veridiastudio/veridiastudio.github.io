@@ -54,3 +54,29 @@ nav a {
   color: #444;
   line-height: 1.6;
 }
+/* Logo */
+.logo {
+  width: 120px;   /* taille réduite */
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+/* Bannière */
+.banniere {
+  width: 100%;          /* occupe toute la largeur */
+  max-height: 250px;    /* limite la hauteur */
+  object-fit: cover;    /* recadre sans déformer */
+  display: block;
+  margin-bottom: 2rem;
+}
+
+/* Images des produits */
+.produit img {
+  width: 100%;          /* s’adapte au bloc */
+  max-width: 200px;     /* limite la largeur */
+  height: auto;         /* garde les proportions */
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto 1rem;  /* centrage */
+}
