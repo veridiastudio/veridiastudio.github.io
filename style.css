@@ -28,10 +28,10 @@ header nav a:hover {
 
 /* === Logo centré === */
 .logo {
-  width: 120px;   /* taille fixe */
+  width: 120px;
   height: auto;
   display: block;
-  margin: 0 auto 1rem; /* centre horizontalement */
+  margin: 0 auto 1rem;
 }
 
 /* === Section Hero === */
@@ -41,15 +41,15 @@ header nav a:hover {
   background-color: #fafafa;
 }
 
-/* Bannière réduite et responsive */
+/* Bannière recadrée : coupe 20% du haut */
 .banniere {
-  width: 45%;           /* plus petite : 45% de la largeur */
-  max-width: 550px;     /* limite absolue sur grand écran */
-  height: auto;
-  border-radius: 12px;
+  width: 100%;
+  height: 180px;               /* hauteur fixe réduite */
+  object-fit: cover;           /* remplit sans déformer */
+  object-position: center top; /* affiche le bas, coupe le haut */
   display: block;
   margin: 0 auto 20px auto;
-  object-fit: contain;  /* évite tout rognage de l’image */
+  border-radius: 12px;
 }
 
 /* Texte du hero */
@@ -63,11 +63,10 @@ header nav a:hover {
   color: #555;
 }
 
-/* Responsive pour mobile */
+/* === Responsive pour mobile === */
 @media (max-width: 768px) {
   .banniere {
-    width: 80%;          /* plus grande sur mobile */
-    max-width: 350px;
+    height: 140px;             /* encore plus compacte sur mobile */
   }
 }
 
@@ -117,7 +116,7 @@ header nav a:hover {
 
 .produit img {
   width: 100%;
-  max-width: 200px;    /* limite la largeur */
+  max-width: 200px;
   height: auto;
   border-radius: 5px;
   display: block;
@@ -137,5 +136,4 @@ footer {
   background: #111;
   color: #fff;
 }
-
 
