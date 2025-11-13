@@ -34,31 +34,22 @@ header nav a:hover {
   margin: 0 auto 1rem;
 }
 
-/* === Section Hero === */
+/* === Section Hero (remontée) === */
 .hero {
   text-align: center;
-  padding: 20px 20px;
+  padding: 3rem 1rem 2rem; /* plus de padding en haut */
   background-color: #fafafa;
 }
 
-
-
-/* Texte du hero */
 .hero h2 {
-  margin-top: 10px;
-  font-size: 1.8rem;
+  margin-top: 0;
+  font-size: 2rem;
 }
 
 .hero p {
+  margin: 0.5rem 0 1rem;
   font-size: 1rem;
   color: #555;
-}
-
-/* === Responsive pour mobile === */
-@media (max-width: 768px) {
-  .banniere {
-    height: 140px;             /* encore plus compacte sur mobile */
-  }
 }
 
 /* === Boutons === */
@@ -127,4 +118,5 @@ footer {
   background: #111;
   color: #fff;
 }
+
 
