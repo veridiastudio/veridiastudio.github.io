@@ -1,4 +1,4 @@
-/* Reset basique */
+/* === Reset basique === */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,7 +7,7 @@ body {
   color: #333;
 }
 
-/* Header */
+/* === Header === */
 header {
   text-align: center;
   padding: 1rem 0;
@@ -26,7 +26,7 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-/* Logo centré */
+/* === Logo centré === */
 .logo {
   width: 120px;   /* taille fixe */
   height: auto;
@@ -34,33 +34,44 @@ header nav a:hover {
   margin: 0 auto 1rem; /* centre horizontalement */
 }
 
-/* Section Hero */
+/* === Section Hero === */
 .hero {
   text-align: center;
-  padding: 2rem 1rem;
-  background: #eee;
+  padding: 20px 20px;
+  background-color: #fafafa;
 }
 
+/* Bannière réduite et responsive */
+.banniere {
+  width: 45%;           /* plus petite : 45% de la largeur */
+  max-width: 550px;     /* limite absolue sur grand écran */
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 20px auto;
+  object-fit: contain;  /* évite tout rognage de l’image */
+}
+
+/* Texte du hero */
 .hero h2 {
-  margin-top: 1rem;
-  font-size: 2rem;
+  margin-top: 10px;
+  font-size: 1.8rem;
 }
 
 .hero p {
-  margin: 0.5rem 0 1rem;
+  font-size: 1rem;
+  color: #555;
 }
 
-/* Bannière réduite de 50% */
-.banniere {
-  width: 100%;
-  height: 50%;        /* réduit la hauteur de moitié */
-  max-height: 200px;  /* limite la hauteur max */
-  object-fit: cover;  /* recadre sans déformer */
-  display: block;
-  margin: 0 auto 1rem;
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+  .banniere {
+    width: 80%;          /* plus grande sur mobile */
+    max-width: 350px;
+  }
 }
 
-/* Boutons */
+/* === Boutons === */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -75,13 +86,13 @@ header nav a:hover {
   background: #444;
 }
 
-/* Présentation */
+/* === Présentation === */
 .presentation {
   padding: 2rem 1rem;
   text-align: center;
 }
 
-/* Produits */
+/* === Produits === */
 .produits {
   padding: 2rem 1rem;
   background: #fafafa;
@@ -113,13 +124,13 @@ header nav a:hover {
   margin: 0 auto 1rem;
 }
 
-/* Politique */
+/* === Politique === */
 .politique-preview {
   padding: 2rem 1rem;
   text-align: center;
 }
 
-/* Footer */
+/* === Footer === */
 footer {
   text-align: center;
   padding: 1rem;
