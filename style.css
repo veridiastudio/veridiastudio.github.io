@@ -41,16 +41,7 @@ header nav a:hover {
   background-color: #fafafa;
 }
 
-/* Bannière recadrée : coupe 20% du haut */
-.banniere {
-  width: 100%;
-  height: 180px;               /* hauteur fixe réduite */
-  object-fit: cover;           /* remplit sans déformer */
-  object-position: center top; /* affiche le bas, coupe le haut */
-  display: block;
-  margin: 0 auto 20px auto;
-  border-radius: 12px;
-}
+
 
 /* Texte du hero */
 .hero h2 {
