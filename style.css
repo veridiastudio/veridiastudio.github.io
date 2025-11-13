@@ -1,82 +1,154 @@
+/* === Styles généraux === */
 body {
-  font-family: 'Poppins', sans-serif;
   margin: 0;
-  background: #fdfdfd;
-  color: #333;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
 }
 
+/* === Header === */
 header {
-  background: #111;
-  color: #fff;
-  padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 60px; /* Taille du logo */
+  object-fit: contain;
 }
 
 nav a {
-  color: #fff;
-  margin: 0 1rem;
   text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  margin-left: 20px;
+  transition: color 0.3s;
 }
 
+nav a:hover {
+  color: #0077cc;
+}
+
+/* === Section Hero === */
 .hero {
-  background: #00a884;
-  color: #fff;
-  padding: 4rem 2rem;
   text-align: center;
+  padding: 30px 20px;
+  background-color: #fafafa;
+}
+
+.banniere {
+  width: 90%;           /* Taille réduite pour éviter qu’elle soit coupée */
+  max-width: 1000px;    /* Largeur maximale */
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 20px auto;
+  object-fit: cover;
+}
+
+.hero h2 {
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #555;
 }
 
 .btn {
-  background: #111;
-  color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 1rem;
   display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
 }
+
+.btn:hover {
+  background-color: #333;
+}
+
+/* === Section Présentation === */
 .presentation {
-  padding: 2rem;
-  background: #fff;
+  padding: 50px 20px;
   text-align: center;
-  max-width: 800px;
-  margin: auto;
+  background-color: #fff;
 }
 
 .presentation h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
-.presentation p {
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.6;
-}
-/* Logo */
-.logo {
-  width: 120px;   /* taille réduite */
-  height: auto;
-  display: block;
-  margin: 0 auto 1rem;
+/* === Section Produits === */
+.produits {
+  padding: 50px 20px;
+  background-color: #fafafa;
+  text-align: center;
 }
 
-/* Bannière */
-.banniere {
-  width: 100%;          /* occupe toute la largeur */
-  max-height: 250px;    /* limite la hauteur */
-  object-fit: cover;    /* recadre sans déformer */
-  display: block;
-  margin-bottom: 2rem;
+.produits h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
 }
 
-/* Images des produits */
+.produits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.produit {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.produit:hover {
+  transform: translateY(-5px);
+}
+
 .produit img {
-  width: 100%;          /* s’adapte au bloc */
-  max-width: 200px;     /* limite la largeur */
-  height: auto;         /* garde les proportions */
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto 1rem;  /* centrage */
+  width: 100%;
+  max-width: 320px; /* Augmente la taille des images produits */
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
 }
+
+.produit h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.produit p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* === Pied de page === */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* === Correction bug “hood” === */
+body::after {
+  content: none !important;
+}
+
