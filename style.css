@@ -1,100 +1,60 @@
-/* === Reset basique === */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Courier New', monospace;
   line-height: 1.6;
-  background-color: #0D0D0D; /* noir mat streetwear */
-  color: #F5F5DC;           /* beige clair */
+  background-color: #FFF8F0; /* crème pastel */
+  color: #333;
 }
 
-/* === Header === */
 header {
   text-align: center;
   padding: 1rem 0;
-  background: #111;
-  color: #F5F5DC;
+  background: #FFB6B9;
+  color: #333;
 }
 
 header nav a {
-  color: #F4D35E; /* jaune doré rétro */
-  text-decoration: none;
+  color: #333;
   margin: 0 10px;
   font-weight: bold;
 }
+header nav a:hover { color: #FF6F61; }
 
-header nav a:hover {
-  color: #D7263D; /* rouge japonais */
-}
+.logo { width: 120px; margin: 0 auto 1rem; display: block; }
 
-/* === Logo === */
-.logo {
-  width: 120px;
-  margin: 0 auto 1rem;
-  display: block;
-}
-
-/* === Hero === */
 .hero {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #2E2E2E;
-  border-radius: 8px;
-  margin: 1rem auto;
-  max-width: 1200px;
+  text-align: left;
+  padding: 2rem;
+  background: #FAE3D9;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1000px;
 }
+.hero h2 { color: #FF6F61; }
 
-.hero h2 { color: #D7263D; }
-.hero p { color: #F5F5DC; }
-
-/* === Boutons === */
 .btn {
-  background: #D7263D;
-  color: #fff;
+  background: #FFB6B9;
+  color: #333;
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 6px;
 }
-.btn:hover {
-  background: #F4D35E;
-  color: #111;
-}
+.btn:hover { background: #FFD3B6; color: #000; }
 
-/* === Présentation === */
-.presentation {
-  background: #2E2E2E;
-  border-radius: 8px;
-  text-align: center;
-  margin: 1rem auto;
-  max-width: 1200px;
+.presentation, .produits, .politique-preview {
+  background: #FAE3D9;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1000px;
+  text-align: left;
+  padding: 2rem;
 }
-.presentation h2 { color: #D7263D; }
+.presentation h2, .produits h2, .politique-preview h3 { color: #FF6F61; }
 
-/* === Produits === */
-.produits {
-  background: #2E2E2E;
-  border-radius: 8px;
-  margin: 1rem auto;
-  max-width: 1200px;
-}
-.produits h2 { color: #D7263D; text-align: center; }
-.produits-grid { display: flex; justify-content: center; gap: 2rem; }
-.produit img { border: 2px solid #F4D35E; border-radius: 5px; }
+.produit img { border: 2px solid #FF6F61; border-radius: 8px; }
 
-/* === Politique === */
-.politique-preview {
-  background: #2E2E2E;
-  border-radius: 8px;
-  text-align: center;
-  margin: 1rem auto;
-  max-width: 1200px;
-}
-.politique-preview h3 { color: #D7263D; }
-
-/* === Footer === */
 footer {
-  background: #111;
-  color: #F5F5DC;
+  background: #FFB6B9;
+  color: #333;
   text-align: center;
-  padding: 0.8rem;
+  padding: 1rem;
 }
-
-
