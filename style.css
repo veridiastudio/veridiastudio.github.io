@@ -151,4 +151,20 @@ footer {
 body::after {
   content: none !important;
 }
+/* Logo centré */
+.logo {
+  width: 120px;   /* taille fixe */
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem; /* centre horizontalement */
+}
+
+/* Bannière réduite */
+.banniere {
+  width: 100%;
+  max-height: 180px;   /* réduit la hauteur */
+  object-fit: cover;   /* recadre sans déformer */
+  display: block;
+  margin: 0 auto 2rem;
+}
 
