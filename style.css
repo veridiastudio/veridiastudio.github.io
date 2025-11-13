@@ -17,7 +17,7 @@ header {
 }
 
 .logo {
-  height: 60px; /* Taille du logo */
+  height: 60px;
   object-fit: contain;
 }
 
@@ -41,8 +41,8 @@ nav a:hover {
 }
 
 .banniere {
-  width: 90%;           /* Taille réduite pour éviter qu’elle soit coupée */
-  max-width: 1000px;    /* Largeur maximale */
+  width: 63%;           /* Réduction de 30 % (au lieu de 90%) */
+  max-width: 700px;     /* Réduction proportionnelle */
   height: auto;
   border-radius: 12px;
   display: block;
@@ -121,7 +121,7 @@ nav a:hover {
 
 .produit img {
   width: 100%;
-  max-width: 320px; /* Augmente la taille des images produits */
+  max-width: 416px; /* +30 % (avant 320px) */
   height: auto;
   border-radius: 10px;
   object-fit: contain;
